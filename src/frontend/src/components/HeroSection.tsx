@@ -70,29 +70,15 @@ export default function HeroSection() {
           transition={{ duration: 1.0, delay: 0.5, ease: [0.22, 1, 0.36, 1] }}
           className="flex flex-col items-center mt-6"
         >
-          {/* Thin decorative rule */}
-          <div
-            className="w-24 h-px mb-5"
-            style={{
-              background:
-                "linear-gradient(to right, transparent, oklch(0.52 0.13 22 / 0.7), transparent)",
-            }}
-          />
-
           <p
-            className="uppercase tracking-[0.35em] text-xs sm:text-sm font-medium"
-            style={{ color: "oklch(0.52 0.13 22 / 0.9)" }}
-          >
-            Crafting Cinematic Excellence
-          </p>
-
-          <div
-            className="w-24 h-px mt-5"
+            className="uppercase tracking-[0.15em] font-semibold"
             style={{
-              background:
-                "linear-gradient(to right, transparent, oklch(0.52 0.13 22 / 0.7), transparent)",
+              color: "oklch(0.52 0.13 22 / 0.9)",
+              fontSize: "clamp(1.1rem, 3.5vw, 2.8rem)",
             }}
-          />
+          >
+            One Studio. Every Screen.
+          </p>
         </motion.div>
       </div>
 

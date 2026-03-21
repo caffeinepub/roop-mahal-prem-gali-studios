@@ -40,6 +40,11 @@ const projects = [
     url: "https://youtu.be/RlqAR8_iDfI?si=UpypFfXxt2-9PM9M",
   },
   {
+    id: "e8kfXO31IqI",
+    type: "youtube",
+    url: "https://youtu.be/e8kfXO31IqI?feature=shared",
+  },
+  {
     id: "instagram",
     type: "instagram",
     url: "https://www.instagram.com/reel/C5YFbaosEK_/?igsh=MWp5OTZhejkzYmtneA==",
@@ -79,14 +84,7 @@ function VideoCard({
 
         {/* Play button */}
         <div className="absolute inset-0 flex items-center justify-center">
-          <div
-            className="w-14 h-14 border-2 border-white/50 rounded-full flex items-center justify-center bg-black/30 backdrop-blur-sm transition-all duration-300"
-            style={
-              {
-                // CSS hover handled via group classes + inline on hover would need JS; use group-hover via data attributes approach
-              }
-            }
-          >
+          <div className="w-14 h-14 border-2 border-white/50 rounded-full flex items-center justify-center bg-black/30 backdrop-blur-sm transition-all duration-300">
             {project.type === "instagram" ? (
               <Instagram
                 size={20}

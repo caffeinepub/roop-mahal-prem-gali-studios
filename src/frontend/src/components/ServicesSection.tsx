@@ -1,4 +1,12 @@
-import { Building2, Car, Cpu, Film, Music2, Users } from "lucide-react";
+import {
+  Building2,
+  Car,
+  Clapperboard,
+  Cpu,
+  Film,
+  Music2,
+  Users,
+} from "lucide-react";
 import { useInView } from "../hooks/useInView";
 
 const GREEN = "oklch(0.54 0.11 148)";
@@ -32,6 +40,12 @@ const services = [
     title: "Corporate Films",
     description:
       "Structured storytelling designed for brand communication and internal alignment.",
+  },
+  {
+    icon: Clapperboard,
+    title: "Documentaries",
+    description:
+      "Long-form storytelling that goes beyond the surface. We craft documentaries that explore real people, places, and ideas with depth, honesty, and cinematic craft—leaving audiences with something that stays with them.",
   },
   {
     icon: Cpu,
