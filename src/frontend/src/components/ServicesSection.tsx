@@ -1,6 +1,8 @@
 import { Building2, Car, Cpu, Film, Music2, Users } from "lucide-react";
 import { useInView } from "../hooks/useInView";
 
+const GREEN = "oklch(0.54 0.11 148)";
+
 const services = [
   {
     icon: Film,
@@ -50,13 +52,19 @@ export default function ServicesSection() {
     >
       <div className="max-w-7xl mx-auto px-6">
         <div className="text-center mb-16">
-          <p className="text-xs uppercase tracking-cinematic text-gold mb-3">
+          <p
+            className="text-xs uppercase tracking-cinematic mb-3"
+            style={{ color: GREEN }}
+          >
             What We Do
           </p>
           <h2 className="text-4xl sm:text-5xl font-black uppercase text-foreground tracking-tight">
             Services
           </h2>
-          <div className="w-12 h-px bg-gold mx-auto mt-6" />
+          <div
+            className="w-12 h-px mx-auto mt-6"
+            style={{ backgroundColor: GREEN }}
+          />
         </div>
 
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-px bg-white/5">
@@ -70,7 +78,8 @@ export default function ServicesSection() {
               >
                 <Icon
                   size={24}
-                  className="text-gold mb-6 group-hover:scale-110 transition-transform duration-300"
+                  className="mb-6 group-hover:scale-110 transition-transform duration-300"
+                  style={{ color: GREEN }}
                 />
                 <h3 className="text-sm font-bold uppercase tracking-wide text-foreground mb-3">
                   {service.title}

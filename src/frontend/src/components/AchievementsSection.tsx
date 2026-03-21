@@ -1,5 +1,9 @@
 import { useInView } from "../hooks/useInView";
 
+// Slightly lighter burgundy for readability on dark backgrounds
+const BURGUNDY_LIGHT = "oklch(0.58 0.13 8)";
+const BURGUNDY = "oklch(0.40 0.10 8)";
+
 const achievements = [
   {
     stat: "VH1",
@@ -35,13 +39,19 @@ export default function AchievementsSection() {
     >
       <div className="max-w-7xl mx-auto px-6">
         <div className="text-center mb-16">
-          <p className="text-xs uppercase tracking-cinematic text-gold mb-3">
+          <p
+            className="text-xs uppercase tracking-cinematic mb-3"
+            style={{ color: BURGUNDY_LIGHT }}
+          >
             Milestones
           </p>
           <h2 className="text-4xl sm:text-5xl font-black uppercase text-foreground tracking-tight">
             Achievements
           </h2>
-          <div className="w-12 h-px bg-gold mx-auto mt-6" />
+          <div
+            className="w-12 h-px mx-auto mt-6"
+            style={{ backgroundColor: BURGUNDY_LIGHT }}
+          />
         </div>
 
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-px bg-white/5">
@@ -53,14 +63,17 @@ export default function AchievementsSection() {
             >
               <div
                 className="text-4xl sm:text-5xl font-black mb-3 leading-none"
-                style={{ color: "oklch(var(--gold))" }}
+                style={{ color: BURGUNDY_LIGHT }}
               >
                 {item.stat}
               </div>
               <div className="text-sm font-bold uppercase tracking-wide text-foreground mb-3">
                 {item.label}
               </div>
-              <div className="w-6 h-px bg-gold/40 mx-auto mb-3" />
+              <div
+                className="w-6 h-px mx-auto mb-3"
+                style={{ backgroundColor: `${BURGUNDY}` }}
+              />
               <p className="text-xs text-muted-foreground leading-relaxed">
                 {item.description}
               </p>

@@ -6,6 +6,7 @@ const navLinks = [
   { label: "Work", href: "#work" },
   { label: "Services", href: "#services" },
   { label: "Achievements", href: "#achievements" },
+  { label: "BTS", href: "#bts" },
   { label: "Contact", href: "#contact" },
 ];
 
@@ -36,11 +37,11 @@ export default function Navbar() {
           className="flex items-center gap-3 group"
           data-ocid="nav.link"
         >
-          <div className="w-10 h-10 border border-gold/60 flex items-center justify-center">
-            <span className="text-gold font-bold text-lg tracking-tight">
-              RM
-            </span>
-          </div>
+          <img
+            src="/assets/uploads/IMG-20250224-WA0039-1--1.jpg"
+            alt="Roop Mahal Prem Gali Studios"
+            className="w-10 h-10 object-contain"
+          />
           <div className="hidden sm:block">
             <p className="text-xs font-semibold tracking-cinematic uppercase text-foreground leading-tight">
               Roop Mahal

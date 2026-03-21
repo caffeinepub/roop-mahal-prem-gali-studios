@@ -1,5 +1,7 @@
 import { useInView } from "../hooks/useInView";
 
+const RED = "oklch(0.52 0.13 22)";
+
 export default function AboutSection() {
   const { ref, isVisible } = useInView();
 
@@ -12,15 +14,18 @@ export default function AboutSection() {
       <div className="max-w-5xl mx-auto px-6">
         <div className="grid md:grid-cols-2 gap-16 items-center">
           <div>
-            <p className="text-xs uppercase tracking-cinematic text-gold mb-4">
+            <p
+              className="text-xs uppercase tracking-cinematic mb-4"
+              style={{ color: RED }}
+            >
               About Us
             </p>
             <h2 className="text-4xl sm:text-5xl font-black uppercase leading-tight text-foreground mb-8">
               End-to-End.
               <br />
-              No Compromises.
+              Every Frame Counts.
             </h2>
-            <div className="w-12 h-px bg-gold mb-8" />
+            <div className="w-12 h-px mb-8" style={{ backgroundColor: RED }} />
           </div>
           <div className="space-y-5">
             <p className="text-sm text-muted-foreground leading-relaxed">
@@ -40,7 +45,11 @@ export default function AboutSection() {
             <div className="pt-4">
               <a
                 href="#contact"
-                className="text-xs font-semibold uppercase tracking-widest text-gold border-b border-gold/40 pb-1 hover:border-gold transition-colors"
+                className="text-xs font-semibold uppercase tracking-widest pb-1 hover:opacity-80 transition-opacity"
+                style={{
+                  color: RED,
+                  borderBottom: "1px solid oklch(0.52 0.13 22 / 0.4)",
+                }}
                 data-ocid="about.primary_button"
               >
                 Work With Us →

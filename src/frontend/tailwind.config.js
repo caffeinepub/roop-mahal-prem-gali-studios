@@ -45,6 +45,11 @@ export default {
         "bg-dark": "oklch(var(--bg-dark) / <alpha-value>)",
         "bg-mid": "oklch(var(--bg-mid) / <alpha-value>)",
         "bg-light": "oklch(var(--bg-light) / <alpha-value>)",
+        "red-muted": "oklch(var(--red-muted) / <alpha-value>)",
+        burgundy: "oklch(var(--burgundy) / <alpha-value>)",
+        brown: "oklch(var(--brown) / <alpha-value>)",
+        "blue-muted": "oklch(var(--blue-muted) / <alpha-value>)",
+        "green-muted": "oklch(var(--green-muted) / <alpha-value>)",
       },
       fontFamily: {
         sans: ["Inter", "system-ui", "-apple-system", "sans-serif"],
