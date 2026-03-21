@@ -1,0 +1,101 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;900&display=swap");
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    /* Cinematic dark palette — OKLCH raw L C H values */
+    --background: 14.5 0.012 225;
+    --foreground: 97 0.005 230;
+    --card: 18 0.015 225;
+    --card-foreground: 97 0.005 230;
+    --popover: 14.5 0.012 225;
+    --popover-foreground: 97 0.005 230;
+    --primary: 73 0.09 75; /* Gold */
+    --primary-foreground: 14.5 0.012 225;
+    --secondary: 22 0.018 225;
+    --secondary-foreground: 97 0.005 230;
+    --muted: 22 0.018 225;
+    --muted-foreground: 66 0.012 225;
+    --accent: 73 0.09 75;
+    --accent-foreground: 14.5 0.012 225;
+    --destructive: 50 0.22 27;
+    --destructive-foreground: 97 0.005 230;
+    --border: 25 0.015 225;
+    --input: 25 0.015 225;
+    --ring: 73 0.09 75;
+    --radius: 0.375rem;
+
+    /* Custom tokens */
+    --bg-deepest: 11 0.012 225;
+    --bg-dark: 14.5 0.012 225;
+    --bg-mid: 18 0.015 225;
+    --bg-light: 22 0.018 225;
+    --gold: 73 0.09 75;
+    --gold-muted: 68 0.06 75;
+    --text-primary: 97 0.005 230;
+    --text-muted: 66 0.012 225;
+  }
+
+  * {
+    @apply border-border;
+  }
+
+  html {
+    scroll-behavior: smooth;
+    color-scheme: dark;
+  }
+
+  body {
+    @apply bg-background text-foreground;
+    font-family: "Inter", system-ui, -apple-system, sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+
+  ::selection {
+    background: oklch(73% 0.09 75 / 0.3);
+    color: oklch(97% 0.005 230);
+  }
+}
+
+@layer components {
+  .fade-in-section {
+    opacity: 0;
+    transform: translateY(24px);
+    transition: opacity 0.7s ease, transform 0.7s ease;
+  }
+
+  .fade-in-section.is-visible {
+    opacity: 1;
+    transform: translateY(0);
+  }
+
+  .gold-text {
+    color: oklch(var(--gold));
+  }
+
+  .gold-border {
+    border-color: oklch(var(--gold));
+  }
+
+  .cinematic-gradient {
+    background: linear-gradient(
+      to bottom,
+      oklch(5% 0.01 225) 0%,
+      oklch(8% 0.015 225) 40%,
+      oklch(11% 0.012 225) 100%
+    );
+  }
+
+  .nav-link {
+    @apply text-xs font-medium uppercase tracking-widest transition-colors duration-200;
+    color: oklch(var(--text-primary));
+  }
+
+  .nav-link:hover {
+    color: oklch(var(--gold));
+  }
+}
