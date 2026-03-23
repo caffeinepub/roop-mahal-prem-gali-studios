@@ -18,7 +18,7 @@ export default function AboutSection() {
               className="text-xs uppercase tracking-cinematic mb-4"
               style={{ color: RED }}
             >
-              About Us
+              Who Are We
             </p>
             <h2 className="text-4xl sm:text-5xl font-black uppercase leading-tight text-foreground mb-8">
               End-to-End.
