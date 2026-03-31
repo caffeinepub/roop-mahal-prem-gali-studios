@@ -53,7 +53,7 @@ export default function HeroSection() {
           className="w-full flex items-center justify-center"
         >
           <img
-            src="/assets/uploads/105188-removebg-preview-1.png"
+            src="/assets/uploads/1-019d282c-23bc-7129-8792-1a3f53ff0243-1.png"
             alt="Roop Mahal Prem Gali Studios"
             className="w-[90vw] max-w-4xl object-contain"
             style={{

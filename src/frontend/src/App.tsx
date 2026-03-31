@@ -3,6 +3,7 @@ import AboutSection from "./components/AboutSection";
 import AchievementsSection from "./components/AchievementsSection";
 import BTSSection from "./components/BTSSection";
 import ContactSection from "./components/ContactSection";
+import DirectorsSection from "./components/DirectorsSection";
 import Footer from "./components/Footer";
 import HeroSection from "./components/HeroSection";
 import Navbar from "./components/Navbar";
@@ -18,6 +19,7 @@ export default function App() {
         <HeroSection />
         <AboutSection />
         <WorkSection />
+        <DirectorsSection />
         <ServicesSection />
         <AchievementsSection />
         <BTSSection />
