@@ -132,7 +132,7 @@ const crewMembers: CrewMember[] = [
     name: "Shantanu Kardile",
     title: "Producer",
     bio: "A filmmaker and problem-solver focused on stories that deliver. He creates films that balance strong ideas with sharp execution — from music videos to brand campaigns. At Roop Mahal Prem Gali Studios, he works across projects end-to-end, ensuring every piece is clear, engaging, and built to perform. He continues to explore new formats and technologies to keep the work relevant and future-ready.",
-    photo: "/assets/generated/shantanu-kardile-profile.dim_800x1000.jpg",
+    photo: "/assets/generated/shantanu-kardile-cinematic.dim_800x1000.jpg",
     objectPosition: "center 18%",
   },
 ];

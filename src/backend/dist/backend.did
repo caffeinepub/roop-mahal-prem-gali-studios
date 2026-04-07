@@ -1,0 +1,26 @@
+type Time = int;
+type Project = 
+ record {
+   description: text;
+   thumbnailUrl: text;
+   title: text;
+   videoUrl: text;
+ };
+type ContactSubmission = 
+ record {
+   email: text;
+   message: text;
+   name: text;
+   timestamp: Time;
+ };
+service : {
+  addProject: (title: text, description: text, videoUrl: text, thumbnailUrl:
+   text) -> ();
+  deleteProject: (title: text) -> ();
+  getAllContacts: () -> (vec ContactSubmission) query;
+  getAllProjects: () -> (vec Project) query;
+  getProject: (title: text) -> (Project) query;
+  submitContact: (name: text, email: text, message: text) -> ();
+  updateProject: (title: text, description: text, videoUrl: text,
+   thumbnailUrl: text) -> ();
+}
